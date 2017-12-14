@@ -30,7 +30,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* ------------------------------------ */
 /* new CSS Grid */
 .head {
     grid-area: head;
@@ -38,21 +37,62 @@ img {
 .recommended {
     z-index: 1;
     grid-area: rec;
-    /*border: 3px solid #f7f7f7*/
-}
-.recommended img{
-    width: 143px;
-    height: 72px;
+    border-radius: 8px;
+    background: black;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
 }
 .video {
     grid-area: video;
+    border-radius: 8px;
+    background: black;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
+}
+.video h2{
+    margin-left: 5%;
 }
 .info{
     grid-area: info;
+/*    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;*/
 }
 .scores{
     grid-area: scores;
 }
+.scores-block{
+    width: 45%;
+    border-radius: 8px;
+    /*background: rgba(255, 255, 255, 0.8);*/
+    background: white;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
+    float: left;
+    /*display: block;*/
+    color: black;
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+    height: 100px;
+}
+.scores-block h2{
+    position: relative;
+    top: 10%;
+    /*display: inline-block;*/
+    /*height: 50px;*/
+    margin: 5%;
+    vertical-align: middle;
+}
+.float-left{ float: left; margin-left: 5%; }
+.float-right{ float: left; margin-right: 5%; }
+/*#scores-1{ float: left; }
+#scores-2{ float: right; }
+#scores-3{ float: right; }
+#scores-4{ float: left; }*/
 .news{
     grid-area: news;
     /*background: black;*/
@@ -63,16 +103,22 @@ img {
     grid-area: chat;
     line-height: 0.95;
     float: left;
-    /*background: black;*/
-    /*opacity: 0.5;*/
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    /*background: #FAFAFA;*/
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
 }
 .chat b {
-    color: white;
-    background: black;
+    color: black;
+    /*opacity: 1;*/
+    /*background: black;*/
 }
 .chat p {
-    color: black;
-    background: white;
+    color: white;
+    /*background: white;*/
 }
 .foot{
     grid-area: foot;
@@ -292,8 +338,8 @@ li a:hover:not(.active) {
     color: white;
 }
 .news-grid {
- grid-row: 2/ span 6;
- grid-column: 2/8;
+   grid-row: 2/ span 6;
+   grid-column: 2/8;
 }
 .grid-container-news {
   display: grid;
@@ -326,6 +372,6 @@ li a:hover:not(.active) {
   margin-top: 70px;
 }
 .featured-stories {
- grid-row: 2 / span 5;
- grid-column: 8/10;
+   grid-row: 2 / span 5;
+   grid-column: 8/10;
 }
