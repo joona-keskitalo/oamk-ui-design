@@ -6,19 +6,19 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
 }
-
 button {
     background: transparent;
     border: none !important;
     font-size:0;
 }
-
 .head{
-    padding: 3.5em;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    padding-left: 1.75em;
 }
 .es{
-    text-transform: uppercase;
-    font-size: 30px;
+    /*text-transform: uppercase;*/
+    font-size: 24pt;
     font-weight: 700;
 }
 #nav_bar{
@@ -36,6 +36,14 @@ button {
 img {
     max-width: 100%;
     height: auto;
+}
+.search{
+    padding: 6px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    border-radius: 8px;
+    width: auto;
+    height: 20%;
 }
 /* new CSS Grid */
 .head {
@@ -59,14 +67,9 @@ img {
 .video h2{
     margin-left: 5%;
 }
-.info{
+#info{
     grid-area: info;
-/*    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
-    margin: 5px;*/
+    width: 90%;
 }
 .scores{
     grid-area: scores;
@@ -96,10 +99,6 @@ img {
 }
 .float-left{ float: left; margin-left: 5%; }
 .float-right{ float: left; margin-right: 5%; }
-/*#scores-1{ float: left; }
-#scores-2{ float: right; }
-#scores-3{ float: right; }
-#scores-4{ float: left; }*/
 .news{
     grid-area: news;
     /*background: black;*/
@@ -109,23 +108,41 @@ img {
 .chat{
     grid-area: chat;
     line-height: 0.95;
-    float: left;
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
+    /*float: left;*/
+    /*height: 100%;*/
+    width: 80%;
+    /*border-radius: 8px;*/
     /*background: #FAFAFA;*/
-    background: rgba(255, 255, 255, 0.8);
+    /*background: rgba(255, 255, 255, 0.8);*/
+    /*box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);*/
+    border-radius: 8px;
+    background: black;
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
     margin: 5px;
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
 }
-.chat b {
-    color: black;
-    /*opacity: 1;*/
-    /*background: black;*/
+.chatText{
+    margin: 5%;
+    /*display: inline-block;*/
 }
-.chat p {
-    color: white;
-    /*background: white;*/
+.chatBox{
+    padding: 6px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    border-radius: 8px;
+    width: 75%;
+    height: 30px;
+    /*vertical-align: bottom;*/
+    /*position: relative;*/
+    /*min-height: 150px;*/
+    /*position: absolute;*/
+    /*bottom: 15px;*/
+    /*display: inline-block;*/
+    margin-top: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 .foot{
     grid-area: foot;
@@ -235,14 +252,20 @@ img {
 /* Animation for games */
 .games{
     z-index: 1;
-    transition: all .2s ease-in-out;
+    /*transition: all .2s ease-in-out;*/
 }
 .games:hover{
     z-index: 2;
     transition: all .2s ease-in-out;
-    transform: scale(1.1);
+    transform: scale(1.01);
+    opacity: 1;
     /*box-shadow: 0px 0px 50px #141414;*/
     /*box-shadow: 0px 0px 150px #000000;*/
+}
+.games:not(:hover){
+    background: black;
+    transition: all .2s ease-in-out;
+    opacity: 0.6;
 }
 /*TODO change classes to navbar IDs*/
 ul {
@@ -345,14 +368,15 @@ li a:hover:not(.active) {
     color: white;
 }
 .news-grid {
-   grid-row: 2/ span 6;
-   grid-column: 2/8;
+    grid-row: 2/ span 6;
+    grid-column: 2/8;
 }
 .grid-container-news {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-gap: 10px 50px;
-  padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px 50px;
+    padding: 10px;
+    width: 80%;
 }
 .news-filter {
     border: 2px solid #f7f7f7;
@@ -363,22 +387,23 @@ li a:hover:not(.active) {
     width: auto;
     height: auto;
     margin-top: 20px;
+    float: left;
 }
-.grid-row2-filter-news {
-    /*filter*/
-    grid-row: 2/ span 5;
-    grid-column: 5/6;
-    border-radius: 20px;
+.featured-article img{
+    float: right;
+    height: auto;
+    width: 50%;
 }
 .article {
     grid-row: 3/ span 4;
     grid-column: 3/4;
 }
 .articles{
-  margin-bottom: 70px;
-  margin-top: 70px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    width: 90%;
 }
 .featured-stories {
-   grid-row: 2 / span 5;
-   grid-column: 8/10;
+    grid-row: 2 / span 5;
+    grid-column: 8/10;
 }
