@@ -27,4 +27,26 @@ $(document).ready(function() {
 		document.getElementById("videoContainer").innerHTML = "<h2>Ei pysty meil o lanit</h2><video width='100%'' height='auto' autoplay loop controls><source src='video/lanit.mp4' type='video/mp4'></video>";
 		document.getElementById("info").innerHTML = "<h1>Ei pysty meil o lanit</h1> <p>Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit </p>";
 	});
+
+
+
+
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
+
+
+
+
+
+
+	
 });

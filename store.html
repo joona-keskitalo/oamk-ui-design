@@ -1,100 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/store.css">
-  <title></title>
-  <style>
-  input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    height: 20px;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-  }
-</style>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="head">
-      <a class="es">eSportHub</a>
-      <div id="nav_bar">
-        <a href="index.html" title="">Home</a>
-        <a href="events.html" title="">Events</a>
-        <a href="store.html" title="">Store</a>
-        <a href="news.html" title="">News</a>
-        <a href="betting.html" title="">Betting</a>
-        <a>
-          <input class="search" type="text" name="search" placeholder="Search">
-        </a>
-        <a href="login.html">Login/SignUp</a>
-      </div>
-    </div>
-    <div class="body">
-      <h2>Store</h2>
-      <div>
-        <input type="text" name="Search" id="search" placeholder="Search Item">
-      </div>
-      <div class="dropdown">
-        <button id="b1" class="dropbtn">GAME<i class="arrow down"><span></span></i></button>
-        <div class="dropdown-content">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>eSporthub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/store.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="wrapper-store">
+      <div class="head">
+        <a class="es">eSportHub</a>
+        <div id="nav_bar">
+          <a href="index.html" title="">Home</a>
+          <a href="events.html" title="">Events</a>
+          <a href="store.html" title="">Store</a>
+          <a href="news.html" title="">News</a>
+          <a href="betting.html" title="">Betting</a>
+          <a>
+            <input class="search" type="text" name="search" placeholder="Search">
+          </a>
+          <a href="login.html">Login/SignUp</a>
         </div>
       </div>
-      <div class="dropdown">
-        <button id="b2" class="dropbtn">GENRE<span></span><i class="arrow down"></i></button>
-        <div class="dropdown-content">
+      <div class="store-container1">
+        <h1>Store</h1>
+        <div class="dropdown">
+          <button class="dropbtn">Gametype</button>
+          <div class="dropdown-content">
+            <a href="#">FPS</a>
+            <a href="#">RTS</a>
+            <a href="#">MOBA</a>
+            <a href="#">Other</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Genre</button>
+          <div class="dropdown-content">
+            <a href="#">RPG</a>
+            <a href="#">Action</a>
+            <a href="#">Sports</a>
+            <a href="#">Horror</a>
+            <a href="#">Other</a>
+          </div>
+        </div>
+        <div id="slidecontainer">
+          <span>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <p>Max Price: <span id="myRangeValue"></span></p>
+            <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("myRangeValue");
+            output.innerHTML = slider.value;
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            }
+            </script>
+          </span>
         </div>
       </div>
-      <div class="dropdown">
-        <button id="b3" class="dropbtn">PRICE</button>
-        <input class="number" type="number"> :
-        <input class="number" type="number">
-        <div class="dropdown-content">
-        </div>
-      </div>
-      <div class="dropdown">
-        <button id="b4" class="dropbtn">VERSION<span></span><i class="arrow down"></i></button>
-        <div class="dropdown-content">
-        </div>
-      </div>
-    </div>
-    <div id="stuffs">
-      <div class="row">
-        <div class="post">
-          <img src="img/avatars/dog.jpg">
-          <h3 class="title">Product</h3>
+      <div class="store-container2">
+        <div class="store-item">
+          <img src="img/covers/bo3.jpg">
+          <h3 class="title">Black Ops 3</h3>
           <p>8$ | Add to cart</p>
         </div>
-        <div class="post">
-          <img src="img/avatars/dog.jpg">
-          <h3 class="title">Product</h3>
+        <div class="store-item">
+          <img src="img/covers/cod4.jpg">
+          <h3 class="title">Call of Duty 4</h3>
           <p>8$ | Add to cart</p>
         </div>
-        <div class="post">
-          <img src="img/avatars/dog.jpg">
-          <h3 class="title">Product</h3>
+        <div class="store-item">
+          <img src="img/covers/csgo.jpg">
+          <h3 class="title">CSGO</h3>
           <p>8$ | Add to cart</p>
         </div>
-        <div class="post">
-          <img src="img/avatars/dog.jpg">
-          <h3 class="title">Product</h3>
+        <div class="store-item">
+          <img src="img/covers/dota.jpg">
+          <h3 class="title">Dota 2</h3>
           <p>8$ | Add to cart</p>
         </div>
-        <div class="post">
-          <img src="img/avatars/dog.jpg">
-          <h3 class="title">Product</h3>
+        <div class="store-item">
+          <img src="img/covers/pugb.jpg">
+          <h3 class="title">PUGB</h3>
           <p>8$ | Add to cart</p>
         </div>
-        <div class="post">
-          <img src="img/avatars/dog.jpg">
-          <h3 class="title">Product</h3>
+        <div class="store-item">
+          <img src="img/covers/rl.jpg">
+          <h3 class="title">Rocket League</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/sc2.jpg">
+          <h3 class="title">StarCraft II</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/steam.jpg">
+          <h3 class="title">Steam Gift Card</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/amn.jpg">
+          <h3 class="title">Amnesia</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/bf3.jpg">
+          <h3 class="title">Battlefield 3</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/car.jpg">
+          <h3 class="title">My Summer Car</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/hf.jpg">
+          <h3 class="title">Homefront</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/bo3.jpg">
+          <h3 class="title">Black Ops 3</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/cod4.jpg">
+          <h3 class="title">Call of Duty 4</h3>
           <p>8$ | Add to cart</p>
         </div>
       </div>
-    </div>
-  </body>
+      <div class="store-container3">
+        <div class="store-item">
+          <img src="img/covers/csgo.jpg">
+          <h3 class="title">CSGO</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/dota.jpg">
+          <h3 class="title">Dota 2</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/pugb.jpg">
+          <h3 class="title">PUGB</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+        <div class="store-item">
+          <img src="img/covers/rl.jpg">
+          <h3 class="title">Rocket League</h3>
+          <p>8$ | Add to cart</p>
+        </div>
+      </div>
+    </body>
   </html>
