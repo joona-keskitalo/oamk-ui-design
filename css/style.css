@@ -618,7 +618,18 @@ grid-column: 3/4;
 .wrapper-streamPage{
     grid-template-areas:
     ". head head head head head head head head ."
-    ". vv vv vv vv vv vv chat chat .";
+    ". vv vv vv vv vv vv chat chat ."
+    ". c c c c c c d d ."
+    ". e e e e e e d d .";
+}
+.stream-description1{
+    grid-area: c;
+}
+.stream-description2{
+    grid-area: d;
+}
+.stream-description3{
+    grid-area: e;
 }
 .stream-video{
     grid-area: vv;
