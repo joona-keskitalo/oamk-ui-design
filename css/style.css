@@ -629,7 +629,19 @@ grid-column: 3/4;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    /*background-image: url("../img/covers/csgo.jpg");*/
 }
+
+#stream-icon1{
+background-image: url("../img/covers/csgo_scr.jpg");
+background-size: cover;
+color: white;
+}
+
+
+
+
+
 .stream-icon h2{
     margin-top: 50%;
     position: relative;
