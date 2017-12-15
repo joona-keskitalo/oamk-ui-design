@@ -370,6 +370,7 @@ li a:hover:not(.active) {
     border: none;
     cursor: pointer;
     float: left;
+    text-decoration: none;
 }
 .button-s{
     border-radius: 6px;
@@ -471,6 +472,28 @@ grid-column: 3/4;
     ". aa aa aa aa aa aa aa aa ."
     ". aa aa aa aa aa aa aa aa ."
     ". bb bb bb bb bb bb bb bb .";
+}
+
+
+.wrapper-storeContent{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
+    grid-gap: 10px;
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". ee ee aa aa aa aa aa . .";
+}
+
+.store-content1{
+    grid-area: ee;
+}
+
+.store-content2{
+    grid-area: aa;
+    height: 1000px;
 }
 .store-container1{
     grid-area: ee;
