@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+
+
 	$('#video1').on('click', function() {
 		document.getElementById("videoContainer").innerHTML = "<h2>Counter Strike: DreamHack Finals</h2><video width='100%'' height='auto' autoplay loop controls><source src='video/csgo.mp4' type='video/mp4'></video>";
 		document.getElementById("info").innerHTML = "<h1>CSGO: DreamHack Finals</h1> <p>Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Hidden Path Entertainment and Valve Corporation. It is the fourth game in the Counter-Strike series and was released for Microsoft Windows, OS X, Xbox 360, and PlayStation 3 in August 2012, with the Linux version released in September 2014. The game pits two teams against each other: the Terrorists and the Counter-Terrorists. Both sides are tasked with eliminating the other while also completing separate objectives, the Terrorists, depending on the game mode, must either plant the bomb or defend the hostages, while the Counter-Terrorists must either prevent the bomb from being planted or rescue the hostages. There are six game modes, all of which have distinct characteristics specific to that mode.</p>";
@@ -28,18 +31,72 @@ $(document).ready(function() {
 		document.getElementById("info").innerHTML = "<h1>Ei pysty meil o lanit</h1> <p>Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit Ei pysty meil o lanit </p>";
 	});
 
+	$('.event1').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "DreamHack: Qualification Round 1";
+		document.getElementById("eventText").innerHTML = "Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.";
+		// document.getElementById("eventScore1").innerHTML = "CONTENT";
+		// document.getElementById("eventScore2").innerHTML = "CONTENT";
+		document.getElementById("eventImageContent").innerHTML = "<img src='img/logos/dreamhack.png'</img>";
+	});
+
+	$('.event2').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "ESL One Katowice 2018: Dota 2";
+		document.getElementById("eventText").innerHTML = "CONTENT";
+		document.getElementById("eventScore1").innerHTML = "CONTENT";
+		document.getElementById("eventScore2").innerHTML = "CONTENT";
+	});
+
+	$('.event3').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "Intel Extreme Masters: StarCraft II";
+		document.getElementById("eventText").innerHTML = "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.";
+		document.getElementById("eventScore1").innerHTML = "CONTENT";
+		document.getElementById("eventScore2").innerHTML = "CONTENT";
+	});
+
+	$('.event4').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "CONTENT";
+		document.getElementById("eventText").innerHTML = "CONTENT";
+		document.getElementById("eventScore1").innerHTML = "CONTENT";
+		document.getElementById("eventScore2").innerHTML = "CONTENT";
+	});
+
+	$('.event5').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "CONTENT";
+		document.getElementById("eventText").innerHTML = "CONTENT";
+		document.getElementById("eventScore1").innerHTML = "CONTENT";
+		document.getElementById("eventScore2").innerHTML = "CONTENT";
+	});
+
+	$('.event6').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "CONTENT";
+		document.getElementById("eventText").innerHTML = "CONTENT";
+		document.getElementById("eventScore1").innerHTML = "CONTENT";
+		document.getElementById("eventScore2").innerHTML = "CONTENT";
+	});
+
+	$('.event7').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "CONTENT";
+		document.getElementById("eventText").innerHTML = "CONTENT";
+		document.getElementById("eventScore1").innerHTML = "CONTENT";
+		document.getElementById("eventScore2").innerHTML = "CONTENT";
+	});
+
+	$('.event8').on('click', function() {
+		document.getElementById("eventTitle").innerHTML = "CONTENT";
+		document.getElementById("eventText").innerHTML = "CONTENT";
+		document.getElementById("eventScore1").innerHTML = "CONTENT";
+		document.getElementById("eventScore2").innerHTML = "CONTENT";
+	});
 
 
 
-
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo");
 output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
-    output.innerHTML = this.value;
+	output.innerHTML = this.value;
 }
 
 
@@ -48,5 +105,5 @@ slider.oninput = function() {
 
 
 
-	
+
 });

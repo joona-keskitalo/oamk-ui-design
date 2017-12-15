@@ -7,6 +7,7 @@
   <title>eSporthub - News</title>
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/news.css"> -->
+  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
 <body>
@@ -15,6 +16,7 @@
       <a class="es">eSportHub</a>
       <div id="nav_bar">
         <a href="index.html" title="">Home</a>
+        <a href="Streams.html" title="">Streams</a>
         <a href="events.html" title="">Events</a>
         <a href="store.html" title="">Store</a>
         <a href="news.html" title="">News</a>
@@ -25,45 +27,40 @@
         <a href="login.html">Login/SignUp</a>
       </div>
     </div>
-    <div class="news-grid">
+    <div class="news-filter">
       <h1>NEWS</h1>
-      <div class="grid-container-news">
-        <b>Filter</b>
-        <div class="news-filter">FPS</div>
-        <div class="news-filter">MOBA</div>
-        <div class="news-filter">Strategy</div>
-        <div class="news-filter">PlatFormer</div>
+      <div class="row">
+        <h2>Genre</h2>
+        <div class="button-s">FPS</div>
+        <div class="button-s">MOBA</div>
+        <div class="button-s">Strategy</div>
+        <div class="button-s">PlatFormer</div>
       </div>
-      <div class="grid-container-news">
-        <div class="news-filter">Past hour</div>
-        <div class="news-filter">Past two hours</div>
-        <div class="news-filter">Today</div>
-        <div class="news-filter">Yesterday</div>
-        <div class="news-filter">This week</div>
+      <div id="filter">
+        <h2>Based on time</h2>
+        <div class="button-s">Past hour</div>
+        <div class="button-s">Past two hours</div>
+        <div class="button-s">Today</div>
+        <div class="button-s">Yesterday</div>
+        <div class="button-s">This week</div>
       </div>
+    </div>
+    <div class="news-grid">
       <div class="articles">
-        <div class="article">
-          <h2>"Brazil can support an Overwatch League team in the future"</h2>
-          <h3>Source : Best Gamming News   11.12.2017</h3>
-        </div>
-        <div class="article">
-          <img src="img/news-1.jpg" alt="News-1" ;>
-        </div>
-        <div class="article">
-          <p>Answering fan questions in a Reddit Ask Me Anything (AMA) post, Overwatch League commissioner Nate Nanzer discussed the league's future expansion. Europe and Brazil, in particular, are two areas of focus for future seasons, Nanzer said. "Europe is a very important region with a ton of great players," Nanzer wrote. "In fact, there are 30 European players in the Overwatch League this season. Europe is also a key focus for us as we look to expand the league to add more teams in future seasons. Brazil is also an area of focus for us, and a country that we think can definitely support an Overwatch League team in the future."</p>
-          <input type="submit" value="Comments">
-          <input type="submit" value="Share">
-        </div>
+        <h2>"Brazil can support an Overwatch League team in the future"</h2>
+        <h3>Source : Best Gaming News   11.12.2017</h3>
+        <img src="img/news-1.jpg" alt="News-1" ;>
+        <p>Answering fan questions in a Reddit Ask Me Anything (AMA) post, Overwatch League commissioner Nate Nanzer discussed the league's future expansion. Europe and Brazil, in particular, are two areas of focus for future seasons, Nanzer said. "Europe is a very important region with a ton of great players," Nanzer wrote. "In fact, there are 30 European players in the Overwatch League this season. Europe is also a key focus for us as we look to expand the league to add more teams in future seasons. Brazil is also an area of focus for us, and a country that we think can definitely support an Overwatch League team in the future."</p>
+        <input class="button-s" type="submit" value="Comments">
+        <input class="button-s" type="submit" value="Share">
       </div>
       <div class="articles">
         <h2>Elements Pro Gaming drops their squad, but does't give up on Dota 2 yet"</h2>
         <h3>Source : Cybersport   11.12.2017</h3>
-        <div>
-          <img src="img/news-2.jpg" alt="News-1" ;>
-        </div>
+        <img src="img/news-2.jpg" alt="News-1" ;>
         <p>Elements Pro decided to drop their Dota 2 squad and try again with a new team, not giving up on the Dota 2 scene. Ever since forming the roster in September EPG dropped out of the Dota 2 scene radar, unsurprisingly disbanding after lack of results.</p>
-        <input type="submit" value="Comments">
-        <input type="submit" value="Share">
+        <input class="button-s" type="submit" value="Comments">
+        <input class="button-s" type="submit" value="Share">
       </div>
     </div>
     <div class="featured-stories">

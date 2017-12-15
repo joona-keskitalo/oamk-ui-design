@@ -17,7 +17,6 @@ body {
     padding-left: 1.75em;
 }
 .es{
-    /*text-transform: uppercase;*/
     font-size: 24pt;
     font-weight: 700;
 }
@@ -45,7 +44,6 @@ img {
     width: auto;
     height: 20%;
 }
-/* new CSS Grid */
 .head {
     grid-area: head;
 }
@@ -119,12 +117,9 @@ img {
     background: black;
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
     margin: 5px;
-    /*display: inline-block;*/
-    /*vertical-align: bottom;*/
 }
 .chatText{
     margin: 5%;
-    /*display: inline-block;*/
 }
 .chatBox{
     padding: 6px;
@@ -133,12 +128,6 @@ img {
     border-radius: 8px;
     width: 75%;
     height: 30px;
-    /*vertical-align: bottom;*/
-    /*position: relative;*/
-    /*min-height: 150px;*/
-    /*position: absolute;*/
-    /*bottom: 15px;*/
-    /*display: inline-block;*/
     margin-top: 70%;
     margin-left: 10%;
     margin-right: 10%;
@@ -163,111 +152,99 @@ img {
     ". scores scores scores scores scores scores news news ."
     ". foot foot foot foot foot foot foot foot .";
 }
-/* ------------------------------------- */
-/* ------ Responsive breakpoints ------- */
-/* ------ for devices ------------------ */
-/* ------------------------------------- */
-@media only screen and (min-device-width: 800px) and (max-device-width: 1200px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
-    }
+/*@media only screen and (min-device-width: 800px) and (max-device-width: 1200px){
+.wrapper{
+grid-template-areas:
+"head head head head head head head head head head"
+"rec video video video video video video video chat chat"
+"rec video video video video video video video chat chat"
+"info info info info info info info info news news"
+"info info info info info info info info news news"
+"scores scores scores scores scores scores scores scores news news"
+"foot foot foot foot foot foot foot foot foot foot";
+}
 }
 @media only screen and (min-device-width: 600px) and (max-device-width: 799px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
-    }
+.wrapper{
+grid-template-areas:
+"head head head head head head head head head head"
+"rec video video video video video video video chat chat"
+"rec video video video video video video video chat chat"
+"info info info info info info info info news news"
+"info info info info info info info info news news"
+"scores scores scores scores scores scores scores scores news news"
+"foot foot foot foot foot foot foot foot foot foot";
+}
 }
 @media only screen and (max-device-width: 599px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "video video video video video video video video video video"
-        "info info info info info info info info info info"
-        "chat chat chat chat chat chat chat chat chat chat"
-        "scores scores scores scores scores scores scores scores scores scores"
-        "news news news news news news news news news news"
-        "foot foot foot foot foot foot foot foot foot foot";
-    }
-    .recommended{
-        display: none;
-    }
+.wrapper{
+grid-template-areas:
+"head head head head head head head head head head"
+"video video video video video video video video video video"
+"info info info info info info info info info info"
+"chat chat chat chat chat chat chat chat chat chat"
+"scores scores scores scores scores scores scores scores scores scores"
+"news news news news news news news news news news"
+"foot foot foot foot foot foot foot foot foot foot";
 }
-/* ------------------------------------- */
-/* ------ Responsive breakpoints ------- */
-/* ------ for resolutions -------------- */
-/* ------------------------------------- */
+.recommended{
+display: none;
+}
+}
 @media only screen and (min-width: 800px) and (max-width: 1100px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
-    }
+.wrapper{
+grid-template-areas:
+"head head head head head head head head head head"
+"rec video video video video video video video chat chat"
+"rec video video video video video video video chat chat"
+"info info info info info info info info news news"
+"info info info info info info info info news news"
+"scores scores scores scores scores scores scores scores news news"
+"foot foot foot foot foot foot foot foot foot foot";
+}
 }
 @media only screen and (min-width: 600px) and (max-width: 799px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
-    }
+.wrapper{
+grid-template-areas:
+"head head head head head head head head head head"
+"rec video video video video video video video chat chat"
+"rec video video video video video video video chat chat"
+"info info info info info info info info news news"
+"info info info info info info info info news news"
+"scores scores scores scores scores scores scores scores news news"
+"foot foot foot foot foot foot foot foot foot foot";
+}
 }
 @media only screen and (max-width: 599px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "video video video video video video video video video video"
-        "info info info info info info info info info info"
-        "chat chat chat chat chat chat chat chat chat chat"
-        "scores scores scores scores scores scores scores scores scores scores"
-        "news news news news news news news news news news"
-        "foot foot foot foot foot foot foot foot foot foot";
-    }
-    .recommended{
-        display: none;
-    }
+.wrapper{
+grid-template-areas:
+"head head head head head head head head head head"
+"video video video video video video video video video video"
+"info info info info info info info info info info"
+"chat chat chat chat chat chat chat chat chat chat"
+"scores scores scores scores scores scores scores scores scores scores"
+"news news news news news news news news news news"
+"foot foot foot foot foot foot foot foot foot foot";
 }
+.recommended{
+display: none;
+}
+}*/
 /* Animation for games */
 .games{
     z-index: 1;
-    /*transition: all .2s ease-in-out;*/
 }
 .games:hover{
     z-index: 2;
     transition: all .2s ease-in-out;
     transform: scale(1.01);
     opacity: 1;
-    /*box-shadow: 0px 0px 50px #141414;*/
-    /*box-shadow: 0px 0px 150px #000000;*/
 }
 .games:not(:hover){
     background: black;
     transition: all .2s ease-in-out;
     opacity: 0.6;
 }
-/*TODO change classes to navbar IDs*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -303,7 +280,12 @@ li a:hover:not(.active) {
     ". head head head head head head head head ."
     ". ee e22 e23 e24 e25 e26 e27 e28 ."
     ". ee e22 e23 e24 e25 e26 e27 e28 ."
-    ". e31 e32 e33 e34 e35 e36 e37 e38 .";
+    ". aa aa aa aa aa aa aa aa ."
+    ". aa aa aa aa aa aa aa aa ."
+    ". aa aa aa aa aa aa aa aa ."
+    ". aa aa aa aa aa aa aa aa ."
+    ". aa aa aa aa aa aa aa aa ."
+    ". bb bb bb bb bb bb bb bb .";
 }
 .events-cal-container{
     grid-area: 2 / 2 / 2 / 10;
@@ -330,6 +312,7 @@ li a:hover:not(.active) {
     z-index: 3;
     transition: all .2s ease-in-out;
     transform: scale(1.03);
+    cursor: pointer;
 }
 .event-text{
     margin-left: 20px;
@@ -351,37 +334,103 @@ li a:hover:not(.active) {
 #event-6{ grid-area:  3 / 6  / 10 / 6; }
 #event-7{ grid-area:  5 / 7  / 10 / 7; background: #ac00b0;}
 #event-8{ grid-area:  6 / 8  / 10 / 8; height: 100px; background: #00a1f2; }
+.eventinfo{
+    grid-area: bb;
+    width: 60%;
+    height: 600px;
+    float:left;
+}
+#eventText{
+    margin-top: 10%;
+    grid-area:  9 / 3  / 9 / 6;
+    float:left;
+}
+#eventImage2{
+    margin-top: 10%;
+    grid-area:  9 / 2  / 9 / 3;
+    float:left;
+}
+.eventinfo img{
+    width: 20%;
+    float: left;
+}
+#eventImage1{
+    grid-area:  9 / 7  / 9 / 9;
+}
+.button{
+    border-radius: 8px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
+    color: black;
+    transition: all .1s ease-in-out;
+    margin-left: 15px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+.button-s{
+    border-radius: 6px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
+    color: black;
+    transition: all .1s ease-in-out;
+    margin-left: 10px;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    float: left;
+}
 /* style for news.html */
 .wrapper-news {
     transition: all .5s ease-in-out;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    /*grid-auto-rows: minmax(10px, auto);*/
     background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
     grid-gap: 10px;
     grid-template-areas:
     ". head head head head head head head head ."
-    ". n1 n1 n1 n1 n1 n1 n1 n1 ."
+    ". a a a a a a c c ."
+    ". b b b b b b c c .";
 }
 .wrapper-news a{
-    /*text-decoration: none;*/
     color: white;
 }
 .news-grid {
-    grid-row: 2/ span 6;
-    grid-column: 2/8;
+    grid-area: b;
+    /*grid-row: 2/ span 6;*/
+    /*grid-column: 2/8;*/
 }
 .grid-container-news {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 10px 50px;
     padding: 10px;
-    width: 80%;
+    /*width: 20%;*/
+    float: left;
 }
 .news-filter {
-    border: 2px solid #f7f7f7;
-    border-radius: 10PX;
-    padding: 5px;
+    grid-area: a;
+    /*border: 2px solid #f7f7f7;*/
+    /*border-radius: 10PX;*/
+    /*padding: 6px;*/
+}
+.news-filter div{
+    /*float: left;*/
+    display: inline-block;
+}
+#filter{
+    margin-left: 5%;
+}
+#filter h2{
+    margin-left: 3%;
 }
 .featured-article{
     width: auto;
@@ -394,14 +443,15 @@ li a:hover:not(.active) {
     height: auto;
     width: 50%;
 }
-.article {
-    grid-row: 3/ span 4;
-    grid-column: 3/4;
-}
+/*.article {
+grid-row: 3/ span 4;
+grid-column: 3/4;
+}*/
 .articles{
     margin-bottom: 70px;
     margin-top: 70px;
     width: 90%;
+    margin-top: 5%;
 }
 .featured-stories {
     grid-row: 2 / span 5;
@@ -409,7 +459,6 @@ li a:hover:not(.active) {
 }
 /* Store.html */
 .wrapper-store {
-    /*transition: all .5s ease-in-out;*/
     display: grid;
     height: auto;
     grid-template-columns: repeat(10, 1fr);
@@ -436,11 +485,6 @@ li a:hover:not(.active) {
     grid-area: bb;
     /*float: left;*/
 }
-.store-button{
-    margin: 2px;
-    padding: 10px;
-    border-radius: 8px;
-}
 .store-item {
     float: left;
     width: 12%;
@@ -449,7 +493,7 @@ li a:hover:not(.active) {
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
     margin: 5px;
     color: black;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     margin-left: 15px;
 }
 .store-item:not(:hover){
@@ -457,9 +501,7 @@ li a:hover:not(.active) {
 }
 .store-item:hover{
     z-index: 3;
-    transition: all .1s ease-in-out;
-    /*transform: scale(1.01);*/
-    /*margin: 2%;*/
+    transition: all .2s ease-in-out;
     opacity: 1;
 }
 .store-item p, .store-item h3{
@@ -522,4 +564,77 @@ li a:hover:not(.active) {
 }
 #myRange{
     width: 100%;
+}
+.wrapper-stream {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
+    grid-gap: 10px;
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". cc aa aa aa aa aa aa aa .";
+}
+.stream-poster{
+    grid-area: cc;
+    width: 100%;
+    height: 100%;
+}
+.stream-poster img{
+    margin-top: 6px;
+}
+.stream-images{
+    grid-area: aa;
+    width: 100%;
+    height: 100%;
+    margin-left: 3%;
+}
+.stream-icon{
+    width: 325px;
+    height: 225px;
+    background: white;
+    float: left;
+    border-radius: 8px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
+    color: black;
+    transition: all .1s ease-in-out;
+    margin: 7px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.stream-icon h2{
+    margin-top: 50%;
+    position: relative;
+}
+.stream-icon p{
+    margin-top: -5%;
+    position: relative;
+}
+.wrapper-streamPage{
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". vv vv vv vv vv vv chat chat .";
+}
+.stream-video{
+    grid-area: vv;
+    border-radius: 8px;
+    background: black;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
+}
+.streamChatbox{
+    padding: 6px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    border-radius: 8px;
+    width: 80%;
+    height: 30px;
+    margin-top: 73%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
